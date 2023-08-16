@@ -5,7 +5,7 @@ COPY package.json /app/
 COPY src /app/
 
 # como cd do prompt. muda diretorio.
-WORDIR /app
+WORKDIR /app
 
 RUN npm install
 
