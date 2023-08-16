@@ -1,0 +1,13 @@
+FROM node:19-alphine
+
+#  "/x/" cria o folder se n tiver.
+COPY package.json /app/
+COPY src /app/
+
+# como cd do prompt. muda diretorio.
+WORDIR /app
+
+RUN npm install
+
+# o comeco do ultimo comando, comando, parametro.
+CMD ["node", "server.js"]
