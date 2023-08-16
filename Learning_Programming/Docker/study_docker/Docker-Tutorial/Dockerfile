@@ -1,4 +1,4 @@
-FROM node:19-alphine
+FROM node:19-alpine
 
 #  "/x/" cria o folder se n tiver.
 COPY package.json /app/
